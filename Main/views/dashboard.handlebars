@@ -1,0 +1,11 @@
+
+<div class="posts list-group">
+  {{#each posts}}
+  <div class="my-db-items alignment">
+    <a href="/dashboard/edit/{{id}}">{{title}}</a>
+    <time datetime="{{createdAt}}">{{formatDate createdAt}}</time>
+  </div>
+  {{/each}}
+</div>
+
+

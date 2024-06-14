@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechnologyTalk</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="flex-columns min-101-vh">
+  <nav class="navsection">
+    <ul class="flex-rows">
+      <li class="line-adjustify nav-links"><a href="/">Comments</a></li>
+      <li class="line-adjustify nav-links"><a href="/dashboard">MyDashboard</a></li>
+      {{#if loggedIn}}
+      <li class="line-adjustify nav-links"><a href="#" id="logout">Logout</a></li>
+      {{else}}
+      <li class="line-adjustify nav-links"><a href="/login">Login</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+  
+  <header class="links">
+    <h1 class="blog-title"><a href="{{#if dashboard}}/dashboard{{else}}/{{/if}}">
+      {{#if dashboard}}My Dashboard{{else}}TechnologyTalk{{/if}}
+    </a></h1>
+  </header>
+
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="footpage flex-rows justify-center">
+    {{#if dashboard}}
+    <a href="/dashboard/new">😀 Add Post</a>
+    {{else}}
+    &copy; Technology Talk Company
+    {{/if}}
+  </footer>
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
+
