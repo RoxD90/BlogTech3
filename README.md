@@ -9,11 +9,14 @@ npm start
 
 git@github.com:RoxD90/BlogTech3.git
 
+https://github.com/RoxD90/BlogTech3.git
+
 https://github.com/RoxD90/BlogTech3
 
 https://roxd90.github.io/BlogTech3/
 
 https://blogtech3-3c7e0a120b64.herokuapp.com/
+
 
 
 
