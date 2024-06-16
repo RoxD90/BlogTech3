@@ -11,11 +11,14 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
+
     body: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
   },
+  
   {
     sequelize,
     freezeTableName: true,

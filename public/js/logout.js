@@ -1,5 +1,5 @@
-var userLogout = async () => {
-  var response = await fetch('/api/users/logout', {
+const useLogOut = async () => {
+  const response = await fetch('/api/users/logout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
   });
@@ -7,9 +7,9 @@ var userLogout = async () => {
   return response;
 };
 
-var logout = async () => {
+const logout = async () => {
   try {
-    var response = await userLogout();
+    var response = await useLogOut();
 
     if (response.ok) {
       document.location.replace('/');

@@ -1,4 +1,4 @@
-const commentFormHandler = async function (event) {
+const commentForm = async function (event) {
   event.preventDefault();
 
   const postId = document.querySelector('input[name="post-id"]').value;
@@ -26,4 +26,4 @@ const commentFormHandler = async function (event) {
 
 document
   .querySelector('#add-comment-form')
-  .addEventListener('submit', commentFormHandler);
+  .addEventListener('submit', commentForm);
